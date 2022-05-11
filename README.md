@@ -13,7 +13,7 @@ releases:
 * You can now setup a port forward to query Elasticsearch API:
 
   ```
-  kubectl port-forward svc/multi-master 9200
+  kubectl port-forward svc/runner-elasticsearch-master 9200
   curl http://localhost:9200
   ```
 
