@@ -1,0 +1,17 @@
+---
+
+clusterName: "runner-elasticsearch"
+nodeGroup: "master"
+
+roles:
+  master: "true"
+  ingest: "false"
+  data: "false"
+  ml: "false"
+  remote_cluster_client: "false"
+
+volumeClaimTemplate:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 10Gi
